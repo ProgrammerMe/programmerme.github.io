@@ -1,12 +1,12 @@
 (function(){
 	// Initialize Firebase
 const config = {
-    apiKey: "<API_KEY>",
-    authDomain: "<PROJECT_ID>.firebaseapp.com",
-    databaseURL: "https://<DATABASE_NAME>.firebaseio.com",
-    projectId: "<PROJECT_ID>",
-    storageBucket: "<BUCKET>.appspot.com",
-    messagingSenderId: "<SENDER_ID>",
+    apiKey: "AIzaSyDj0nT0tp9TANh7XeKNQH5Xfk4ZjeKU60E",
+    authDomain: "programmmer-me.firebaseapp.com",
+    databaseURL: "https://programmmer-me.firebaseio.com",
+    projectId: "programmmer-me",
+    storageBucket: "programmmer-me.appspot.com",
+    messagingSenderId: "872315096155"
   };
 firebase.initializeApp(config);
 const txtEmail = document.getElementById("txtEmail");

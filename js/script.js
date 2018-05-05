@@ -1,14 +1,5 @@
 (function(){
-	// Initialize Firebase
-const config = {
-    apiKey: "AIzaSyDj0nT0tp9TANh7XeKNQH5Xfk4ZjeKU60E",
-    authDomain: "programmmer-me.firebaseapp.com",
-    databaseURL: "https://programmmer-me.firebaseio.com",
-    projectId: "programmmer-me",
-    storageBucket: "programmmer-me.appspot.com",
-    messagingSenderId: "872315096155"
-  };
-firebase.initializeApp(config);
+
 const txtEmail = document.getElementById("txtEmail");
 const txtPassword = document.getElementById("txtPassword");
 const btnLogin = document.getElementById("btnLogin");

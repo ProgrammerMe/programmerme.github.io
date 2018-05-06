@@ -1,124 +1,39 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <script src="https://www.gstatic.com/firebasejs/4.13.0/firebase.js"></script>
-    <script type="text/javascript" src="js/firebasehead.js"></script>
-
-
-	<title>Programmer Me | Program Your Way.</title>
-
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css?family=Work+Sans:500" rel="stylesheet">
-
-<style type="text/css">
-  .quote{
-    font-family: 'Work Sans', sans-serif;
-    font-size: 72px; font-style: normal;
-    color: #eee;
-    text-align: justify;
-    text-align-last: center;
-    padding-right: 16px;
-    padding-left: 16px;
-  }
-  .quote .line2{
-    font-size: 48px;
-  }
-  .quote .big{
-    font-size: 32px;
-    text-align: justify;
-
-  }
-  .quote .author {
-    font-size: 24px;
-    margin-top: 32px;
-    background: rgba(0,0,0,0.75);
-  }
-  footer{
-    background-color: rgba(0,0,0,0.75);
-  }
-</style>
+	<title>ProgrammeMe</title>
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
 </head>
-<body>
-<div class="container-fluid">
-  <div class="row"  >
-    <div class="col-12" style="background: url('img/main_lq.jpg') no-repeat center center fixed;background-size: cover; height: 100vh" >
-      <div style="align-items: center;justify-content: center;display: flex; height: 100vh;width: 100%">
-        <div class="text-center">
-          <div style="font-size: 48px;font-weight: bold;color: #eee;">Programmer Me</div>
-          <div style="font-size: 32px;color: #eee;">program Your Way.</div>          
-        </div>
-      </div>
-    </div>
-  </div>
+<body background="images/1.jpg">
+
+<div class="container-fluid ">
+
+	<div class="row">
+		
+			<div class="col-lg-4"></div>
+
+		<div class="col-lg-4">
+			
+				<div class="card-body">
+			<h1><span id="p">P</span>rogrammer<span id="m">M</span>e</h1>
+
+
+		</div>
+			<button type="button" class="btn btn-dark bt1">Sign-Up</button>
+			<button type="button" class="btn btn-dark bt2">Login</button>
+		
+
+	
+		
+	
+	</div>
+
+<div class="col-lg-4"></div>
+
+	
 </div>
-
-<div class="container-fluid">
-  <div class="row">
-    <div class="col-lg-6 d-flex justify-content-center" style="padding: 0px;height: 100vh;  background-image: url('img/quote_bg.jpg'); background-position: center; background-size: cover; ">
-      <div style="background: rgba(0,0,0,0.65); align-items: center;justify-content: center;display: flex; height: 100vh;width: 100%">
-        <div class="text-center quote " >
-          <div>Talk is cheap. </div>
-          <div class="line2">Show me the Code.</div>
-          <div class="author">Linus Torvalds</div>
-        </div>
-      </div>
-    </div>
-    <div class="col-lg-6 d-flex" style="padding: 0px;height: 100vh;  background-image: url('img/quote_bg.jpg'); background-position: center; background-size: cover; background-attachment: fixed;">
-      <div style="background: rgba(0,0,0,0.65); align-items: center;justify-content: center;display: flex; height: 100vh;width: 100%">
-        <div class="text-center quote " >
-          <div class="big">When you don't create things, you become defined by your tastes rather than ability. your tastes only narrow & exclude people. so create.</div>
-          <div class="author">Why The Lucky Stiff</div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="row">
-     <div class="col-12 d-flex" style="padding: 0px;height: 100vh;  background-image: url('img/hacker-programmer-working-with-data-code-in-a-dark-room-hackers-desk_r5btgt1bl_thumbnail-full01.png'); background-position: center; background-size: cover; background-attachment: fixed;">
-      <div style="background: rgba(0,0,0,0.65); align-items: center;justify-content: center;display: flex; height: 100vh;width: 100%">
-        <div class="text-center quote " >
-          <div>Start creating today.!</div>
-          <div class="author">Programmer Me</div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="container">
-  <div class="row">
-    <div class="col-12 text-center" style="margin-top: 32px;margin-bottom: 32px;" >
-      <input type="email" id="txtEmail" placeholder="Email" style="vertical-align: middle;"/>
-      <input type="password" id="txtPassword" placeholder="Password" style="vertical-align: middle;"/>
-      <button id="btnLogin" class="btn btn-action">
-        Login
-      </button>
-      <button id="btnSignup" class="btn btn-secondary">
-        Signup
-      </button>
-
-      <button id="btnProfile" class="btn btn">
-        Go To Your Profile
-      </button>
-      <button id="btnLogout" class="btn btn-action">
-        Logout
-      </button>
-    </div>
-  </div>
-</div>
-<footer>
-  
-  <div class="text-center" style="line-height: 10vh; font-style: bold; color: #000; font-size: 32px;">
-    Join Us.
-  </div>
-  <div  class="text-center" style="background-color: #000; color: #eee; line-height: 6vh;">
-    &copy; 2018 Programmer Me.
-  </div>
-
-</footer>
-
-  
-
-
-  <script type="text/javascript" src="js/authscript_index.js"></script>
-
+	</div>
 </body>
 </html>
+

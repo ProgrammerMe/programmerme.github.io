@@ -79,42 +79,60 @@ firebase.auth().onAuthStateChanged(firebaseUser => {
 
 
 
-//Database
+//Database Listen
 var projectParentRow = document.getElementsByClassName('projects');
 
 var projectRef = firebase.database().ref('projects');
 projectRef.on('child_added',function(data){
-	addProject();
+
+	console.log(data.val());
+	addProjectDiv(data.val());
 });
 
-function addProject(){
+function addProjectDiv(val){
+	var parentProjectDiv = document.getElementById('projects');
+	var projectDivCloneInput = document.getElementById('project-div-abst');
+	var projectDiv = projectDivCloneInput.cloneNode(true);
+
+	projectDiv.style.display = "block";
+	parentProjectDiv.appendChild(projectDiv);
+
+
+	$('.div-title:last').html(val.projectTitle);
+	$('.div-abstract:last').html(val.projectAbstract);
+
+	$('.div-desc:last').html(val.projectDesciption);
 	
-	var projectDiv = document.creatElement('div');
-	projectDiv.setAttribute('class','col-md-4');
+	console.log(val.projectSkills.length);
+	var divparent = document.getElementById('div-skills');
+	while (divparent.hasChildNodes()) {
+	    divparent.removeChild(divparent.lastChild);
+	}
+	for(var i = 0; i<val.projectSkills.length; i++){
+
+		var div = document.createElement('div');
+		div.setAttribute('class', 'bg-info card-skill div-skill-item');
+		divparent.appendChild(div);
+		div.textContent = val.projectSkills[i] + " : " + val.projectMastery[i];
+		console.log(val.projectMastery[i]);
+		console.log(val.projectSkills[i]);
+		
+	}
+	
+	console.log(val.projectTitle);
+
+
 }
-
-function guid() {
-  return s4() + s4() + '-' + s4() + '-' + s4() + '-' +
-    s4() + '-' + s4() + s4() + s4();
-}
-
-function s4() {
-  return Math.floor((1 + Math.random()) * 0x10000)
-    .toString(16)
-    .substring(1);
-}
-
-
 
 
 
 //Adding Project
-var skills = ['C++','Java','Python','HTML/CSS','Js','Php','Node','MySQL','Android SDK','Android NDK','Kotlin','iOS SDK','Swift','C#','.NET','OpenGL','Firebase','JQuery','Bootstrap']
+var skills = ['C++','Java','Python','HTML/CSS','Js','Php','Node','MySQL','Android SDK','Android NDK','Kotlin','iOS SDK','Swift','C#','.NET','OpenGL','Firebase','JQuery','Bootstrap'];
 const skillSelect = document.getElementById("skillSelect");
 
 for (i = 0; i<skills.length; i++) {
 	var option = document.createElement('option');
-	option.setAttribute('value',i+1);
+	option.setAttribute('value',skills[i]);
 	option.textContent = skills[i];
 	skillSelect.appendChild(option);
 }
@@ -126,7 +144,7 @@ var addSkillTool = document.getElementById('addSkillTool');
 
 var addSkillToolN = document.getElementById('addSkillToolN');
 
-var clickCount = 1;
+var clickCount = 1;var rowCount = 1;
 
 addSkillTool.addEventListener('click',e=>{
 	addRow();
@@ -147,14 +165,15 @@ function addRow(){
 
 	clone.getElementsByTagName('button')[0].id = 'addSkillTool' + clickCount;
 
-	addSkillTool.style.display = 'none' 
+	addSkillTool.style.display = 'none';
 	
 	inputParent.appendChild(clone);
+	rowCount = rowCount+1;
 
 	addSkillTool = document.getElementById('addSkillTool'+clickCount);
 
 	if (clickCount==5) {
-		addSkillTool.style.display = 'none' 
+		addSkillTool.style.display = 'none';
 	}
 
 	addSkillTool.addEventListener('click', e=>{
@@ -163,6 +182,92 @@ function addRow(){
 	});
 }
 
+//Adding to Database
+var validation = document.getElementById('validation');
+var addProjectToDb = document.getElementById('addProjectToDb');
+addProjectToDb.addEventListener('click', e=>{
+	var id = guid();
+	var title = document.getElementById('addProjectTitle').value;
+	if (title=="") {
+		validation.innerHTML = "Please Add Title";
+		return;
+	}
+	var abstract = document.getElementById('addProjectAbstract').value;
+	if (abstract=="") {
+		validation.innerHTML = "Please Add Abstract";
+		return;
+	}
+	
+	var skillsA=[]; var masteriesA=[];
+	for (var i = 1; i <= rowCount; i++) {
+		if (i==1) {
+			var parent = document.getElementById('cloneRowSkill');
 
+			var skill = parent.getElementsByTagName('select')[0].value;
+			var mastery = parent.getElementsByTagName('select')[1];
+			var strmastery = mastery.options[mastery.selectedIndex].text;
+			if (skill=="Aimed Skill/Tool") {
+				validation.innerHTML = "Please Choose Atleast One Skill";
+				return;
+			}else {
+				skillsA.push(skill);
+				console.log(skillsA);
+			}
+			if (mastery == "Mastery Level") {
+				validation.innerHTML = "Please Choose Mastery for the Skill";
+				return;
+			}else{
+				masteriesA.push(strmastery);
+			}	
+		}else{
+			var parent = document.getElementById('cloneRowSkill'+(i-1));
+
+			var skill = parent.getElementsByTagName('select')[0].value;
+			var mastery = parent.getElementsByTagName('select')[1];
+			var strmastery = mastery.options[mastery.selectedIndex].text;
+			if (skill=="Aimed Skill/Tool") {
+				//
+			}else{
+				skillsA.push(skill);
+				console.log(skillsA);
+			}
+			if (mastery == "Mastery Level") {
+				validation.innerHTML = "Please Choose Mastery for the Skill";
+				return;
+			}else{
+				masteriesA.push(strmastery);
+			}	
+		}
+
+		var description = document.getElementById('addProjectDescription').value;
+		console.log(description);
+		if (description=="") {
+			validation.innerHTML = "Please Add Description"
+			return;
+		}
+
+		validation.innerHTML = "";
+
+	}
+
+	projectRef.child(id).set({
+		projectId: id,
+		projectTitle: title,
+		projectAbstract: abstract,
+		projectSkills: skillsA,
+		projectMastery: masteriesA,
+		projectDesciption: description
+	});
+
+	var closeButton = document.getElementById('closeButton').click();
+});
+
+function guid() {
+  return s4() + s4() + '-' + s4() + '-' + s4() + '-' + s4() + '-' + s4() + s4() + s4();
+}
+
+function s4() {
+  return Math.floor((1 + Math.random()) * 0x10000).toString(16).substring(1);
+}
 
 }())

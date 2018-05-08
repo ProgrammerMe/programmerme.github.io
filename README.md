@@ -15,10 +15,10 @@ our platform.
 4. projects
 
 ### child features
-##### 0. home
+#### 0. home
  - projects (if logged in, add projects)
 
-##### 3. profile
+#### 3. profile
 
  - z. name, avatar, short bio
  - a. learning skills (add/remove)
@@ -27,7 +27,7 @@ our platform.
  - d. completed projects
  - e. views
 
-##### 4. projects
+#### 4. projects
  - z. my projects
  - y. project abstracts to start/join
 

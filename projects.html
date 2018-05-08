@@ -33,12 +33,17 @@
 		  border-radius: 6px;
 		}
 		#project-div-abst{
-		  -webkit-border-radius: 12px; 
-		  -moz-border-radius: 12px; 
-		  border-radius: 12px;
-		  background: #ddd;
-		  padding: 12px;
+			padding: 0px;
 		}
+		.col-pad{
+		   -webkit-border-radius: 9px; 
+		  -moz-border-radius: 9px; 
+		  border-radius: 9px;
+		  background: #ddd;
+		  padding: 9px;
+		  margin: 8px;
+		}
+
 	</style>
 </head>
 <body>
@@ -77,10 +82,12 @@
 	</div>
 	<div class="row" id="projects" style="margin-top: 16px;">
 		<div class="col-md-4" id="project-div-abst" style="display: none;">
-			<h4 class="text-center div-title">Title</h4>
-			<div><b>Abstract : </b><p class="div-abstract" style="display: inline-block;"> Sample</p></div>
-			<div class="div-desc">This is the description, steps</div>
-			<div id="div-skills"><div class="bg-info card-skill div-skill-item">C++ : Intermediate</div></div>
+			<div class="col-pad">
+				<h4 class="text-center div-title">Title</h4>
+				<div><b>Abstract : </b><p class="div-abstract" style="display: inline-block;"> Sample</p></div>
+				<div class="div-desc">This is the description, steps</div>
+				<div id="div-skills"><div class="bg-info card-skill div-skill-item">C++ : Intermediate</div></div>
+			</div>
 		</div>
 	</div>
 </div>

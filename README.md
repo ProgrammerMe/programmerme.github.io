@@ -12,8 +12,7 @@ our platform.
 1. Login and Logout 
 2. Message
 3. profile
-4. active projects
-5. finished projects
+4. projects
 
 ### child features
 ##### 0. home
@@ -28,11 +27,18 @@ our platform.
  - d. completed projects
  - e. views
 
-##### 4/5. projects
+##### 4. projects
+ - z. my projects
+ - y. project abstracts to start/join
+
+###### 0. my projects
  - a. members
  - b. tools used so far
  - c. link/etc to the project
  - d. stars
- - e. join (if logged in)
+
+###### 1. project abstracts
+ - a. details
+ - b. join/start/choose (if logged in)
 
 

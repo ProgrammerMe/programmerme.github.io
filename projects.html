@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <script src="https://www.gstatic.com/firebasejs/4.13.0/firebase.js"></script>
+    <script type="text/javascript" src="js/firebasehead.js"></script>
+
+	<title>Projects - Programmer Me</title>
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+
+
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
+
+	<style type="text/css">
+		.modal-open .modal.modal-center {
+		    display: flex!important;
+		    align-items: center!important;
+		    .modal-dialog {
+		        flex-grow: 1;
+		    }
+		}
+	</style>
+</head>
+<body>
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-12 text-center" style="margin-top: 32px;margin-bottom: 32px;" >
+      <input type="email" id="txtEmail" placeholder="Email" style="vertical-align: middle;"/>
+      <input type="password" id="txtPassword" placeholder="Password" style="vertical-align: middle;"/>
+      <button id="btnLogin" class="btn btn-action">
+        Login
+      </button>
+      <button id="btnSignup" class="btn btn-secondary">
+        Signup
+      </button>
+
+      <button id="btnProfile" class="btn btn">
+        Go To Your Profile
+      </button>
+      <button id="btnLogout" class="btn btn-action">
+        Logout
+      </button>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+	<div class="row">
+		<div class="col-12" style="vertical-align: middle;">
+			<h2 style="display: inline;vertical-align: middle;">Projects</h2>
+			<button id="addProjectButton" type="button" class="btn btn-default btn-sm" style="display: inline; margin-left: 16px; margin-top: 6px;vertical-align: middle;" data-toggle="modal" data-target="#myModal">
+	          <i class="fas fa-plus"></i> Add Project Abstract
+	        </button>
+		</div>
+	</div>
+	<div class="row projects">
+		<div class="col-md-4 addproject text-center">
+			
+		</div>
+	</div>
+</div>
+<!-- Modal -->
+<div class="modal fade modal-center" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Add New Project Abstract</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body input-group mb-3">
+        <input type="text" id="addProjectTitle" placeholder="Project Title" style="width: 100%;margin-bottom: 16px;">
+        <input type="text" id="addProjectTitle" placeholder="Project Abstract" style="width: 100%;margin-bottom: 16px;">
+        <div id="skillsMastery" style="width: 100%">
+	        <div class="input-group mb-3" id="cloneRowSkill">
+			  <select class="custom-select" id="skillSelect">
+			    <option selected>Aimed Skill/Tool</option>
+			  </select>
+			  <select class="custom-select" id="masterySelect">
+			  	<option selected>Mastery Level</option>
+			    <option value="1">Beginner</option>
+			    <option value="2">Intermediate</option>
+			    <option value="3">Advanced</option>
+			    <option value="4">Expert</option>
+			    <option value="5">Master</option>
+			  </select>
+			  <button id="addSkillTool" type="button" class="btn btn-default btn-circle"><i id="plusminus" class="fas fa-plus"></i></i></button>
+
+			</div>
+		</div>
+		<textarea id="addProjectTitle" class="span6" rows="3" placeholder="Description" style="width: 100%;resize: none;" fixed required></textarea>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+        <button type="button" class="btn btn-primary" id="addProjectToDb">Add Project</button>
+      </div>
+    </div>
+  </div>
+</div>
+	
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+	
+	<script type="text/javascript" src="js/projects.js"></script>	
+
+</body>
+</html>

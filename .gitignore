@@ -1,5 +1,8 @@
 sass/
 node_modules/
-package.json/
+package.json
 package-lock.json
 .vscode/
+Command Prompt.lnk
+desktop.ini
+

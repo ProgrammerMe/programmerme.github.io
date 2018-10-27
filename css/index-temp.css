@@ -1,0 +1,36 @@
+#p{
+	font-size: 100px;
+}
+#m{
+	font-size: 80px;
+}
+h1{
+	color: white;
+	letter-spacing: 2px;
+	
+	font-size: 60px;
+}
+.card-body{
+	position: absolute;
+	margin-left: 0px;
+	margin-top: 120px;
+	opacity: 0.7;
+	border: 6px solid gray;
+
+}
+
+.bt1{
+	margin-top: 340px;
+	margin-left: 230px;
+	
+}
+.bt2{
+	margin-top: 340px;
+	margin-left: 30px;
+
+}
+body{
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}

@@ -1,3 +1,13 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+  ::selection {
+	background-color: #25bad0;
+	color: #fff; }
 body, html {
 	font-family: 'Open Sans', sans-serif;
 	text-rendering: optimizeLegibility !important;
@@ -5,37 +15,48 @@ body, html {
 	color: rgba(255,255,255,0.5);
 	width: 100% !important;
 	height: 100% !important;
+	
+}
+html{
+
+	font-size: 62.5%;
+}
+
+body{
+
+	box-sizing: border-box;
+   }
 }
 h1 {
 	font-weight: 400;
 }
 h2 {
-	line-height: 20px;
+	line-height: 2rem;
 	margin: 0;
 	color: #25BAD0;
-	margin-bottom: 30px;
-	font-size: 40px;
+	margin-bottom: 3rem;
+	font-size: 4rem;
 	font-weight: 400;
 	text-transform: uppercase;
-	padding-bottom: 10px;
+	padding-bottom: 1rem;
 }
 h3, h4 {
 	color: #333;
-	font-size: 20px;
+	font-size: 2rem;
 	font-weight: 400;
 }
 h5 {
 	text-transform: uppercase;
 	font-weight: 700;
-	line-height: 20px;
+	line-height: 2rem;
 }
 p {
-	font-size: 15px;
+	font-size: 1.5rem;
 }
 p.intro {
-	font-size: 16px;
-	margin: 12px 0 0;
-	line-height: 24px;
+	font-size: 1.6rem;
+	margin: 1.2rem 0 0;
+	line-height: 2.4rem;
 }
 a {
 	color: #fff;
@@ -69,9 +90,14 @@ ul, ol {
 	webkit-padding: 0;
 	moz-padding: 0;
 }
+.black_hover a:hover 
+{
+	
+
+}
 /* Navigation */
 #menu {
-	padding: 20px;
+	padding: 2rem;
 	transition: all 0.8s;
 }
 #menu.navbar-default {
@@ -79,11 +105,11 @@ ul, ol {
 	border-color: rgba(231, 231, 231, 0);
 }
 #menu a.navbar-brand {
-	font-size: 20px;
+	font-size: 2rem;
 	color: rgba(255,255,255,0.8);
 	font-weight: 500;
 	text-transform: uppercase;
-	letter-spacing: 1px;
+	letter-spacing: 0.1rem;
 }
 #menu a.navbar-brand i.fa {
 	color: #25BAD0;
@@ -91,8 +117,8 @@ ul, ol {
 #menu.navbar-default .navbar-nav > li > a {
 	text-transform: uppercase;
 	color: rgba(255,255,255,0.8);
-	font-size: 12px;
-	letter-spacing: 1px;
+	font-size: 1.2rem;
+	letter-spacing: 0.1rem;
 }
 #menu.navbar-default .navbar-nav > li > a:hover {
 	color: #25BAD0;
@@ -118,17 +144,18 @@ ul, ol {
 .btn-default {
 	color: #25BAD0;
 	background-color: transparent;
-	border: 2px solid #25BAD0;
-	padding: 12px 20px;
+	border: 0.2rem solid #25BAD0;
+	padding: 1.2rem 2rem;
 	margin: 0;
-	font-size: 15px;
-	border-radius: 0;
+	font-size: 1.5rem;
+	border-radius: 1rem;
 	text-transform: uppercase;
 }
 .btn-default:hover, .btn-default:focus, .btn-default.focus, .btn-default:active, .btn-default.active {
 	color: #053740;
 	background-color: #25BAD0;
 	border-color: #25BAD0;
+	transition: all 0.3s;
 }
 .btn:active, .btn.active {
 	background-image: none;
@@ -154,7 +181,7 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 	-o-background-size: cover;
 }
 .intro .overlay {
-	padding: 100px 0;
+	padding: 10rem 0;
 	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#053740+0,053740+100&1+0,0.6+100 */
 	background: -moz-linear-gradient(top, rgba(5,55,64,1) 0%, rgba(5,55,64,0.6) 100%); /* FF3.6-15 */
 	background: -webkit-linear-gradient(top, rgba(5,55,64,1) 0%, rgba(5,55,64,0.6) 100%); /* Chrome10-25,Safari5.1-6 */
@@ -162,12 +189,12 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#053740', endColorstr='#99053740', GradientType=0 ); /* IE6-9 */
 }
 .section-title {
-	padding: 25px 0 60px 0;
+	padding: 2.5rem 0 6rem 0;
 }
 .intro H1 {
-	font-size: 60px;
+	font-size: 6rem;
 	text-transform: uppercase;
-	letter-spacing: 2px;
+	letter-spacing: 0.2rem;
 	color: rgba(255,255,255,0.9);
 }
 .intro .brand {
@@ -175,19 +202,19 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#053740', end
 	font-weight: 700;
 }
 .intro .intro-text p {
-	font-size: 18px;
-	margin-bottom: 40px;
-	margin-top: 20px;
+	font-size: 1.8rem;
+	margin-bottom: 4rem;
+	margin-top: 2rem;
 	text-transform: uppercase;
 	color: rgba(255,255,255,0.9);
 }
 header .intro-text {
-	padding-top: 150px;
-	padding-bottom: 150px;
+	padding-top: 15rem;
+	padding-bottom: 15rem;
 }
 /* Services Section */
 #services {
-	padding: 120px 0;
+	padding: 12rem 0;
 	background: #053740;
 }
 #services h4 {
@@ -195,20 +222,20 @@ header .intro-text {
 	text-transform: uppercase;
 }
 #services i.fa {
-	font-size: 32px;
-	margin-bottom: 20px;
+	font-size: 3.2rem;
+	margin-bottom: 2rem;
 	transition: all 0.5s;
 	color: #053740;
-	width: 100px;
-	height: 100px;
-	padding: 33px 0;
-	border: 1px solid #25BAD0;
+	width: 10rem;
+	height: 10rem;
+	padding: 3.3rem 0;
+	border: 0.1rem solid #25BAD0;
 	background: #25BAD0;
 	border-radius: 50%;
 }
 /* About Section */
 #about {
-	padding: 100px 0;
+	padding: 10rem 0;
 	color: rgba(255,255,255,0.9);
 	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#20a6bb+0,25bad0+50 */
 	background: rgb(32,166,187); /* Old browsers */
@@ -224,19 +251,19 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#20a6bb', end
 	color: #0a4b55;
 }
 #about .about-text {
-	margin-left: 10px;
+	margin-left: 1rem;
 }
 #about p {
-	margin-top: 20px;
-	margin-bottom: 30px;
+	margin-top: 2rem;
+	margin-bottom: 3rem;
 }
 /* Portfolio Section */
 #portfolio {
-	padding: 100px 0;
+	padding: 10rem 0;
 	background: #053740;
 }
 .categories {
-	padding-bottom: 30px;
+	padding-bottom: 3rem;
 	text-align: center;
 }
 ul.cat li {
@@ -244,14 +271,14 @@ ul.cat li {
 }
 ol.type li {
 	display: inline-block;
-	margin-left: 20px;
+	margin-left: 2rem;
 	text-transform: uppercase;
 }
 ol.type li a {
 	background: transparent;
-	border: 2px solid #25BAD0;
+	border: 0.2rem solid #25BAD0;
 	color: #25BAD0;
-	padding: 10px 20px;
+	padding: 1rem 2rem;
 }
 ol.type li a.active {
 	background: #25BAD0;
@@ -274,7 +301,7 @@ ol.type li a:hover {
 	transition-duration: 0.8s;
 }
 .isotope-item {
-	margin-right: -1px;
+	margin-right: -0.1rem;
 	-webkit-backface-visibility: hidden;
 	backface-visibility: hidden;
 }
@@ -293,7 +320,7 @@ ol.type li a:hover {
 	transition-property: transform, opacity;
 }
 .portfolio-item {
-	margin: 15px 0;
+	margin: 1.5rem 0;
 	-webkit-transition: all 0.5s ease-out;
 	-moz-transition: all 0.5s ease-out;
 	-ms-transition: all 0.5s ease-out;
@@ -308,7 +335,7 @@ ol.type li a:hover {
 	transform: scale(1.1);
 }
 .portfolio-item .hover-bg {
-	height: 260px;
+	height: 26rem;
 	overflow: hidden;
 	position: relative;
 }
@@ -354,13 +381,13 @@ ol.type li a:hover {
 	opacity: 1;
 }
 #portfolio i.fa {
-	font-size: 20px;
-	padding: 5px;
+	font-size: 2rem;
+	padding: 0.5rem;
 	color: #E87E04;
 }
 /* Team Section */
 #team {
-	padding: 100px 0;
+	padding: 10rem 0;
 	color: rgba(255,255,255,0.9);
 	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#20a6bb+0,25bad0+50 */
 	background: rgb(32,166,187); /* Old browsers */
@@ -375,16 +402,16 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#20a6bb', end
 #team h3 {
 	color: #0a4b55;
 }
-img.img-circle.team-img {
-	width: 160px;
-	height: 160px;
+img .img-circle.team-img {
+	width: 16rem;
+	height: 16rem;
 }
 #team .thumbnail {
 	background: transparent;
 	border: 0;
 }
 #team .thumbnail .caption {
-	padding: 9px;
+	padding: 0.9rem;
 	color: rgba(255,255,255,0.9);
 }
 /* Contact Section */
@@ -397,7 +424,7 @@ img.img-circle.team-img {
 	-o-background-size: cover;
 }
 #contact .overlay {
-	padding: 100px 0 40px 0;
+	padding: 0rem 0 0rem 0;
 	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#053740+0,053740+100&1+0,0.75+100 */
 	background: -moz-linear-gradient(top, rgba(5,55,64,1) 0%, rgba(5,55,64,0.75) 100%); /* FF3.6-15 */
 	background: -webkit-linear-gradient(top, rgba(5,55,64,1) 0%, rgba(5,55,64,0.75) 100%); /* Chrome10-25,Safari5.1-6 */
@@ -405,39 +432,39 @@ img.img-circle.team-img {
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#053740', endColorstr='#bf053740', GradientType=0 ); /* IE6-9 */
 }
 #contact h3 {
-	padding-top: 20px;
-	font-size: 20px;
+	padding-top: 2rem;
+	font-size: 2rem;
 	font-weight: 400;
 	color: #fff;
 }
 #contact form {
-	padding: 20px 0;
+	padding: 2rem 0;
 }
 #contact i.fa {
 	color: #121d1f;
-	margin-bottom: 10px;
+	margin-bottom: 1rem;
 }
 #contact .text-danger {
 	color: #ff6600;
 	text-align: left;
 }
 label {
-	font-size: 12px;
+	font-size: 1.2rem;
 	font-weight: 400;
 	float: left;
 }
 #contact .form-control {
 	display: block;
 	width: 100%;
-	padding: 6px 12px;
-	margin: 10px 0;
-	font-size: 14px;
+	padding: 0.6rem 1.2rem;
+	margin: 1rem 0;
+	font-size: 1.4rem;
 	line-height: 1.42857143;
 	color: #fff;
 	background-color: rgba(255,255,255,0.2);
 	background-image: none;
 	border: 0;
-	border-radius: 2px;
+	border-radius: 0.2rem;
 	-webkit-box-shadow: none;
 	box-shadow: none;
 	-webkit-transition: none;
@@ -463,18 +490,18 @@ color: #ccc;
 color: #ccc;
 }
 #contact .btn {
-	margin-top: 20px;
+	margin-top: 2rem;
 }
 #contact .social {
-	margin-top: 80px;
+	margin-top: 8rem;
 }
 #contact .social ul li {
 	display: inline-block;
-	margin: 0 20px;
+	margin: 0 2rem;
 }
 #contact .social i.fa {
-	font-size: 30px;
-	padding: 4px 5px;
+	font-size: 3rem;
+	padding: 0.4rem 0.5rem;
 	color: #fff;
 	transition: all 0.5s;
 }
@@ -484,10 +511,10 @@ color: #ccc;
 /* Footer Section*/
 #footer {
 	background: #03252b;
-	padding: 25px 0 20px 0;
+	padding: 2.5rem 0 2rem 0;
 }
 #footer p {
-	font-size: 13px;
+	font-size: 1.3rem;
 }
 #footer a {
 	color: #aaa;
@@ -497,15 +524,59 @@ color: #ccc;
 }
 
 /* Media Queries */
-@media (max-width: 1024px) {
+@media (max-width: 102.4rem) {
 .intro H1 {
-	font-size: 42px;
+	font-size: 4.2rem;
 }
 header .intro-text {
-	padding-top: 100px;
-	padding-bottom: 100px;
+	padding-top: 10rem;
+	padding-bottom: 10rem;
 }
 #about img {
-	margin-bottom: 20px;
+	margin-bottom: 2rem;
 }
+}
+
+
+
+
+
+
+.meal-photo{
+
+	
+	margin: 0;
+	
+	
+}
+
+
+.meal-photo img{
+
+	
+	height: auto;
+	-webkit-transform: scale(1.15);
+	transform: scale(1.15);
+	-webkit-transition: opacity 0.5s,-webkit-transform 0.5s;
+	transition: opacity 0.5s,-webkit-transform 0.5s;
+	transition: transform 0.5s,opacity 0.5s;
+	transition: transform 0.5s,opacity 0.5s,-webkit-transform 0.5s;
+	opacity: 0.9;
+	padding: 0.5rem;
+}
+
+
+.section-meals{
+
+	padding:0 0 0 0;
+
+}
+
+
+.meal-photo img:hover{
+
+   -webkit-transform: scale(1.03);
+
+   transform: scale(1.03);
+	opacity: 1;
 }

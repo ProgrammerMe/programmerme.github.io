@@ -129,7 +129,7 @@ p {	line-height: 2.1; }
 }
 
 .tm-site-name-h1 { 
-	color: #0264cf;
+	color: #c56cf0;
 	font-size: 2rem; 
 }
 
@@ -162,7 +162,7 @@ p {	line-height: 2.1; }
     max-width: none;
     width: 50%;
     text-align: center;
-    background-color: #cccccc;  
+    background-color: #7158e2;					/*#cccccc*/  
     height: 60px;
     font-size: 1.4rem;
     display: -ms-flexbox;
@@ -188,22 +188,36 @@ p {	line-height: 2.1; }
 	display: flex;
 }
 
-.navbar-nav .nav-item.active,
+.navbar-nav .nav-item:active,
 .navbar-nav .nav-item:hover {
-	background-color: #999999;
+	background-color:#17c0eb;     /* #999999*/
 }
 
-.navbar-nav .nav-item.tm-dummy-nav-item:hover {
-	background-color: #cccccc;
+.navbar-nav .nav-item .tm-dummy-nav-item:hover {
+	background-color:#17c0eb;
 	cursor: default;
 }
 
 .nav-link {
-	color: #555555;
+	color: #fff;
 	cursor: pointer;
 }
+.blog-name{
+	color:#ff4d4d;
+	font-weight: 400;
+}
+.blog-name:active,
+.blog-name:hover{
+	background-color:#17c0eb; 
+	cursor:default;
 
-.tm-dummy-nav-item .nav-link { cursor: default; }
+}
+.nav-link 
+
+ .nav-link .tm-dummy-nav-item{ 
+	cursor: default;
+	background-color:#06C; 
+}
 
 .nav-item.active .nav-link,
 .nav-item:hover .nav-link {
@@ -434,6 +448,11 @@ button:focus { outline: none; }
 .tm-about-box-3 {
 	height: 100%;
 	padding: 30px 25px;	
+}
+
+.tm-about-row-1{
+	width:100%;
+	padding:0rem 2rem 0rem 5rem;
 }
 
 .tm-about-col-3-left { margin-bottom: 30px; }
@@ -832,6 +851,13 @@ button:focus { outline: none; }
 		height: 50px;
 		margin-right: 25px;
 	}
+	.nodisplay{
+		display: none;
+	}
+
+	.tm-about-row-1{
+		width: 100%;
+	}
 }
 
 @media (min-width: 480px) {
@@ -839,6 +865,9 @@ button:focus { outline: none; }
 	.tm-about-row {	padding: 50px; }
 	.tm-about-description { margin-bottom: 50px; }
 	.tm-services-description { margin-bottom: 50px; }
+	.nodisplay{
+		display: none;
+	}
 }
 
 @media (min-width: 544px) {			
@@ -1090,6 +1119,9 @@ http://stackoverflow.com/questions/11173106/apply-style-only-on-ie */
 
 @media (min-width: 1240px) {
 	.tm-tab-links-col { width: 25%; }
+	.nodisplay{
+		display: none;
+	}
 	.tm-tab-content-box-col { width: 75%; }	
 }
 
@@ -1101,6 +1133,9 @@ http://stackoverflow.com/questions/11173106/apply-style-only-on-ie */
 	
 	.tm-services-title { margin-bottom: 40px; }
 	.tm-services-description { margin-bottom: 50px; }
+	.nodisplay{
+		display: none;
+	}
 }
 
 @media (max-width: 1360px) and (min-width: 1200px),
@@ -1109,4 +1144,10 @@ http://stackoverflow.com/questions/11173106/apply-style-only-on-ie */
 		padding-left: 3%;
     	padding-right: 3%;
 	}
+	.nodisplay{
+		display: none;
+	}
+}
+.nodisplay{
+	display:block;
 }

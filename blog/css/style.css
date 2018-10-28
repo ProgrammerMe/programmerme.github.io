@@ -101,7 +101,7 @@ a:hover, a:focus {
 
 ul, ol {
   margin: 0;
-  padding: 0;
+  padding: 1rem;
   
 }
 

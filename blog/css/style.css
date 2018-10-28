@@ -30,7 +30,11 @@ RESPONSIVE
 /*----------------------------*\
 	typography
 \*----------------------------*/
-
+.clearfix{
+  content: "";
+  display: table;
+  clear: both;
+}
 body {
   font-family: 'Muli', sans-serif;
   font-size: 16px;
@@ -98,7 +102,7 @@ a:hover, a:focus {
 ul, ol {
   margin: 0;
   padding: 0;
-  list-style: none
+  
 }
 
 ul.list-style, ol.list-style {

@@ -30,6 +30,23 @@ RESPONSIVE
 /*----------------------------*\
 	typography
 \*----------------------------*/
+
+html {
+  font-size: 62.5%; }
+  @media only screen and (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media only screen and (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
+  @media only screen and (min-width: 112.5em) {
+    html {
+      font-size: 75%; } }
+
+
+
+
+
 .clearfix{
   content: "";
   display: table;
@@ -1543,3 +1560,114 @@ textarea.input {
 .display-none{
   display: none;
 }
+
+
+
+
+
+.header {
+  height: 85vh;
+  background-image: linear-gradient(to right bottom,rgba(31, 162, 255, 0.75),rgba(18, 216, 250, 0.75),rgba(166, 255, 203, 0.75)), url(../img/bg-large.jpeg);
+  opacity: 0.5;
+  background-size: cover;
+  background-position: top;
+  position: relative; }
+  @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
+    .header {
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+      clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+      height: 95vh; } }
+  @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em), only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), only screen and (min-width: 125em) {
+    .header {
+      background-image: linear-gradient(to right, rgba(31, 162, 255, 0.75), rgba(18, 216, 250, 0.75),rgba(166, 255, 203, 0.75)), url(../img/bg-large.jpeg); } }
+  @media only screen and (max-width: 37.5em) {
+    .header {
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+      clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%); } }
+  .header__logo-box {
+    position: absolute;
+    top: 4rem;
+    left: 4rem; }
+  .header__logo {
+    height: 3.5rem; }
+
+
+    .header__text-box {
+      position: absolute;
+      top: 40%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center; }
+
+      
+
+      .heading-primary {
+        color: #fff;
+        text-transform: uppercase;
+        backface-visibility: hidden;
+    
+        margin-bottom: 6rem;
+      }
+        .heading-primary--main {
+          display: block;
+          font-size: 6rem;
+          font-weight: 400;
+          letter-spacing: 2.5rem;
+          animation-name: moveInLeft;
+          animation-duration: 1s;
+          animation-timing-function: ease-out;
+          /*
+              animation-delay: 3s;
+              animation-iteration-count: 3;
+              */ }
+
+
+              @media only screen and (max-width: 37.5em) {
+                .heading-primary--main {
+                  letter-spacing: 1rem;
+                  font-size: 3rem; } }
+            .heading-primary--sub {
+              display: block;
+              font-size: 1.5rem;
+              font-weight: 700;
+              letter-spacing: 1.00rem;
+              animation: moveInRight 1s ease-out; }
+              @media only screen and (max-width: 37.5em) {
+                .heading-primary--sub {
+                  letter-spacing: .5rem; } }
+
+
+
+
+
+                  @keyframes moveInLeft {
+                    0% {
+                      opacity: 0;
+                      transform: translateX(-10rem); }
+                    80% {
+                      transform: translateX(1rem); }
+                    100% {
+                      opacity: 1;
+                      transform: translate(0); } }
+                  
+                  @keyframes moveInRight {
+                    0% {
+                      opacity: 0;
+                      transform: translateX(10rem); }
+                    80% {
+                      transform: translateX(-1rem); }
+                    100% {
+                      opacity: 1;
+                      transform: translate(0); } }
+                  
+                  @keyframes moveInBottom {
+                    0% {
+                      opacity: 0;
+                      transform: translateY(3rem); }
+                    100% {
+                      opacity: 1;
+                      transform: translate(0); } }
+
+                      .no-list{
+                        list-style: none;
+                      }

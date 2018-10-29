@@ -580,3 +580,20 @@ header .intro-text {
    transform: scale(1.03);
 	opacity: 1;
 }
+
+.event-info > h2{
+	color: #fff;
+	font-weight: bold;
+}
+
+.event-info > h3{
+	color: #fff;
+	font-weight: bold;
+	line-height:1.2;
+
+}
+.event-date{
+	color: #000000;
+	font-weight: bold;
+	font-size: 2em;
+}

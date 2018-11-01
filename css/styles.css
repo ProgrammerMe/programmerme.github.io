@@ -74,7 +74,7 @@ ul, ol {
 	font-size: 0;
 	content: " ";
 	clear: both;
-	height: 0;
+	height: 22px;
 }
 .clearfix {
 	display: inline-block;
@@ -99,10 +99,12 @@ ul, ol {
 #menu {
 	padding: 2rem;
 	transition: all 0.8s;
+	background-color: #03252b !important;
 }
 #menu.navbar-default {
 	background-color: rgba(248, 248, 248, 0);
 	border-color: rgba(231, 231, 231, 0);
+	
 }
 #menu a.navbar-brand {
 	font-size: 2rem;
@@ -110,6 +112,7 @@ ul, ol {
 	font-weight: 500;
 	text-transform: uppercase;
 	letter-spacing: 0.1rem;
+	
 }
 #menu a.navbar-brand i.fa {
 	color: #25BAD0;
@@ -119,24 +122,35 @@ ul, ol {
 	color: rgba(255,255,255,0.8);
 	font-size: 1.2rem;
 	letter-spacing: 0.1rem;
+	
 }
 #menu.navbar-default .navbar-nav > li > a:hover {
 	color: #25BAD0;
+	
 }
 .on {
 	background-color: #03252b !important;
 	padding: 0 !important;
+	
 }
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
 	color: #25BAD0 !important;
 	background-color: transparent;
+	
 }
 .navbar-toggle {
 	border-radius: 0;
+	color:transparent;
+	background-color: #03252b !important;
+	
+	
 }
+
+
 .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
 	background-color: #25BAD0;
 	border-color: #25BAD0;
+	
 }
 .navbar-default .navbar-toggle:hover>.icon-bar {
 	background-color: #FFF;
@@ -663,6 +677,9 @@ header .intro-text {
 
 
 
+
+	
+
 /*------------------------------------------------------------------------------------------------------------------*/
 
 .event-info > h2{
@@ -682,3 +699,7 @@ header .intro-text {
 	font-weight: bold;
 	font-size: 2em;
 }
+
+
+
+

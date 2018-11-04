@@ -74,7 +74,7 @@ ul, ol {
 	font-size: 0;
 	content: " ";
 	clear: both;
-	height: 0;
+	height: 22px;
 }
 .clearfix {
 	display: inline-block;
@@ -99,10 +99,12 @@ ul, ol {
 #menu {
 	padding: 2rem;
 	transition: all 0.8s;
+	background-color: #03252b !important;
 }
 #menu.navbar-default {
 	background-color: rgba(248, 248, 248, 0);
 	border-color: rgba(231, 231, 231, 0);
+	
 }
 #menu a.navbar-brand {
 	font-size: 2rem;
@@ -110,6 +112,7 @@ ul, ol {
 	font-weight: 500;
 	text-transform: uppercase;
 	letter-spacing: 0.1rem;
+	
 }
 #menu a.navbar-brand i.fa {
 	color: #25BAD0;
@@ -119,24 +122,35 @@ ul, ol {
 	color: rgba(255,255,255,0.8);
 	font-size: 1.2rem;
 	letter-spacing: 0.1rem;
+	
 }
 #menu.navbar-default .navbar-nav > li > a:hover {
 	color: #25BAD0;
+	
 }
 .on {
 	background-color: #03252b !important;
 	padding: 0 !important;
+	
 }
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
 	color: #25BAD0 !important;
 	background-color: transparent;
+	
 }
 .navbar-toggle {
 	border-radius: 0;
+	color:transparent;
+	background-color: #03252b !important;
+	
+	
 }
+
+
 .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
 	background-color: #25BAD0;
 	border-color: #25BAD0;
+	
 }
 .navbar-default .navbar-toggle:hover>.icon-bar {
 	background-color: #FFF;
@@ -540,8 +554,8 @@ header .intro-text {
 
 
 
-
-
+/*New Classes*/
+/*--------------------------------------------------------------------------------------------------------------------------------*/
 .meal-photo{
 
 	
@@ -581,6 +595,93 @@ header .intro-text {
 	opacity: 1;
 }
 
+
+
+
+
+.btn, .btn:link, .btn:visited {
+	text-transform: uppercase;
+	text-decoration: none;
+	padding: 1.5rem 4rem;
+	display: inline-block;
+	border-radius: 10rem;
+	transition: all .2s;
+	position: relative;
+	font-size: 1.6rem;
+	border: none;
+	cursor: pointer; }
+  
+  .btn:hover {
+	transform: translateY(-3px);
+	box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
+	.btn:hover::after {
+	  transform: scaleX(1.4) scaleY(1.6);
+	  opacity: 0; }
+  
+  .btn:active, .btn:focus {
+	outline: none;
+	transform: translateY(-1px);
+	box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
+  
+  .btn--white {
+	background-color: #fff;
+	color: #777; }
+	.btn--white::after {
+	  background-color: #fff; }
+  
+  .btn--green {
+	background-color: #55c57a;
+	color: #fff; }
+	.btn--green::after {
+	  background-color: #55c57a; }
+  
+  .btn::after {
+	content: "";
+	display: inline-block;
+	height: 100%;
+	width: 100%;
+	border-radius: 10rem;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	transition: all .4s; }
+  
+  .btn--animated {
+	animation: moveInBottom .5s ease-out .75s;
+	animation-fill-mode: backwards; }
+  
+  .btn-text:link, .btn-text:visited {
+	font-size: 1.6rem;
+	color: #55c57a;
+	display: inline-block;
+	text-decoration: none;
+	border-bottom: 1px solid #55c57a;
+	padding: 3px;
+	transition: all .2s; }
+  
+  .btn-text:hover {
+	background-color: #55c57a;
+	color: #fff;
+	box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+	transform: translateY(-2px); }
+  
+  .btn-text:active {
+	box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+	transform: translateY(0); }
+  
+	.snap{
+		
+		display: inline-block;
+	}
+
+
+
+
+	
+
+/*------------------------------------------------------------------------------------------------------------------*/
+
 .event-info > h2{
 	color: #fff;
 	font-weight: bold;
@@ -598,3 +699,7 @@ header .intro-text {
 	font-weight: bold;
 	font-size: 2em;
 }
+
+
+
+

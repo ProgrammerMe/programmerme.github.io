@@ -1671,3 +1671,8 @@ textarea.input {
                       .no-list{
                         list-style: none;
                       }
+
+                      .snap{
+                        height: 40vh;
+                        width: 20vw;
+                      }

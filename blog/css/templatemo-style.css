@@ -1151,3 +1151,8 @@ http://stackoverflow.com/questions/11173106/apply-style-only-on-ie */
 .nodisplay{
 	display:block;
 }
+
+.snap{
+	
+	display: inline-block;
+}

@@ -322,7 +322,7 @@ ul li {
   min-height: 100vh;
   position: relative;
   text-align: center;
-  background: url(../images/backgrounds/24pr.png) no-repeat center center/cover;
+  background: url(../images/backgrounds/24PR.png) no-repeat center center/cover;
   display: table;
 }
 .site-header::before {

@@ -26,7 +26,7 @@ body{
 
 	box-sizing: border-box;
    }
-}
+
 h1 {
 	font-weight: 400;
 }
@@ -698,6 +698,10 @@ header .intro-text {
 	color: #000000;
 	font-weight: bold;
 	font-size: 2em;
+}
+
+.countdownmasterDiv{
+	background: transparent;
 }
 
 

@@ -401,7 +401,7 @@ ol.type li a:hover {
 }
 /* Team Section */
 #team {
-	padding: 10rem 0;
+	padding: 10rem 2rem;
 	color: rgba(255,255,255,0.9);
 	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#20a6bb+0,25bad0+50 */
 	background: rgb(32,166,187); /* Old browsers */
@@ -700,10 +700,11 @@ header .intro-text {
 	font-size: 2em;
 }
 
-.countdownmasterDiv{
-	background: transparent;
-}
-
-
+/* * {
+	background: #000 !important;
+	color: #0f0 !important;
+	outline: solid #f00 1px !important;
+  }
+ */
 
 

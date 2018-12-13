@@ -3,6 +3,9 @@ our platform.
 
 This darlings been stale for too long and is going to be revamped.
 
+<!-- language: lang-none -->
+
+<pre>
                 (                           )
           ) )( (                           ( ) )( (
        ( ( ( )  ) )                     ( (   (  ) )(
@@ -27,7 +30,7 @@ This darlings been stale for too long and is going to be revamped.
                   ((                           ))
                     ((                       ((
                       ( )( ))( ( ( ) )( ) (()
-
+</pre>
 immediate todos
 
- - [] Add login button to home
+ - [ ] Add login button to home

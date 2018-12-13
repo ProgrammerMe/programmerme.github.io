@@ -63,7 +63,7 @@ a {
 }
 a:hover, a:focus {
 	text-decoration: none;
-	color: #25BAD0;
+	color: #2500EE;
 }
 ul, ol {
 	list-style: none;
@@ -249,7 +249,7 @@ header .intro-text {
 }
 /* About Section */
 #about {
-	padding: 10rem 0;
+	padding: 0px;
 	color: rgba(255,255,255,0.9);
 	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#20a6bb+0,25bad0+50 */
 	background: rgb(32,166,187); /* Old browsers */
@@ -401,7 +401,7 @@ ol.type li a:hover {
 }
 /* Team Section */
 #team {
-	padding: 10rem 2rem;
+	padding: 0px;
 	color: rgba(255,255,255,0.9);
 	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#20a6bb+0,25bad0+50 */
 	background: rgb(32,166,187); /* Old browsers */

@@ -39,3 +39,4 @@ immediate todos
 [ ] Fix Contacts Page
 [ ] Fix About Page
 [ ] Fix home page design anomalies
+[ ] Fix mobile horizontal scroll appearance

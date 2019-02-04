@@ -416,7 +416,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#20a6bb', end
 #team h3 {
 	color: #0a4b55;
 }
-img .img-circle.team-img {
+img.img-circle.team-img {
 	width: 16rem;
 	height: 16rem;
 }

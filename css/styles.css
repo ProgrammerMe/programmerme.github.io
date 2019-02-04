@@ -203,7 +203,7 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#053740', endColorstr='#99053740', GradientType=0 ); /* IE6-9 */
 }
 .section-title {
-	padding: 2.5rem 0 6rem 0;
+	padding: 6rem 0 4rem 0;
 }
 .intro H1 {
 	font-size: 6rem;
@@ -416,7 +416,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#20a6bb', end
 #team h3 {
 	color: #0a4b55;
 }
-img .img-circle.team-img {
+img.img-circle.team-img {
 	width: 16rem;
 	height: 16rem;
 }

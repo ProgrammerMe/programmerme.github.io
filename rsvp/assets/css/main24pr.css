@@ -224,14 +224,14 @@ ul li {
 }
 
 .bg-image-1 {
-  background: url(../images/backgrounds/24pr2.png) no-repeat center center/cover;
+  background: url(../images/backgrounds/hoc.jpg) no-repeat center center/cover;
 }
 .bg-image-1::before {
   background: #a63636;
 }
 
 .bg-image-2 {
-  background: url(../images/backgrounds/24pr2.png) no-repeat center bottom/cover;
+  background: url(../images/backgrounds/hoc.jpg) no-repeat center bottom/cover;
 }
 .bg-image-2::before {
   background-color: #a63636;
@@ -322,7 +322,7 @@ ul li {
   min-height: 100vh;
   position: relative;
   text-align: center;
-  background: url(../images/backgrounds/24PR.png) no-repeat center center/cover;
+  background: url(../images/backgrounds/bagmlh.png) no-repeat center center/cover;
   display: table;
 }
 .site-header::before {

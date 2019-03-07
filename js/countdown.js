@@ -1,6 +1,6 @@
 var s = document.getElementsByClassName('countdownspan');
 var oneDay = 24 * 60 * 60 * 1000;
-var firstDate = new Date("12:30 24 december 2018 GMT+5:30");var secondDate = new Date();
+var firstDate = new Date("16:00 17 march 2019 GMT+5:30");var secondDate = new Date();
 var days = (firstDate.getTime() - secondDate.getTime()) / (oneDay);
 var hrs = (days - Math.floor(days)) * 24;
 var min = (hrs - Math.floor(hrs)) * 60;

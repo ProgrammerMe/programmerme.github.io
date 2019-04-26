@@ -708,7 +708,7 @@ header .intro-text {
  */
 .list{
 	list-style: circle;
-	text-align: center;
+	text-align: left;
 	padding: 10px;
 	
 }

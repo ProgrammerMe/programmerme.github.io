@@ -706,5 +706,14 @@ header .intro-text {
 	outline: solid #f00 1px !important;
   }
  */
+.list{
+	list-style: square;
+	text-align: left;
+	padding: 10px;
+	
+}
 
-
+.el{
+	padding: 10px;
+	font-size: 120%;
+}

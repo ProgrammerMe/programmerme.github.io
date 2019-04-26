@@ -708,7 +708,7 @@ header .intro-text {
  */
 .list{
 	list-style: circle;
-	text-align: left;
+	text-align: center;
 	padding: 10px;
 	
 }
@@ -720,7 +720,10 @@ header .intro-text {
 
 	
 }
+li{
+	list-style-position: inside;
+}
 .el ::after{
 	padding:10px; 
-	text-align:justify;
+	
 }
